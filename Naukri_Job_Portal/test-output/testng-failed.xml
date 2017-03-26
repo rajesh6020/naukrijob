@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Naukri Job Portal Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="Naukri Jo Portal Test_firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.naukri.test.NaukriExecutionSuite">
         <methods>
-          <include name="loginTest"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- com.naukri.test.NaukriExecutionSuite -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Naukri Jo Portal Test_firefox(failed) -->
+</suite> <!-- Failed suite [Naukri Job Portal Suite] -->

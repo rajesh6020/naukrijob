@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="430" started-at="2016-02-20T00:27:54Z" finished-at="2016-02-20T00:27:54Z">
+  <suite name="Naukri Job Portal Suite" duration-ms="20386" started-at="2017-03-26T13:39:56Z" finished-at="2017-03-26T13:40:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="430" started-at="2016-02-20T00:27:54Z" finished-at="2016-02-20T00:27:54Z">
+    <test name="Naukri Jo Portal Test_firefox" duration-ms="20386" started-at="2017-03-26T13:39:56Z" finished-at="2017-03-26T13:40:17Z">
       <class name="com.naukri.test.NaukriExecutionSuite">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-02-20T05:57:54Z" finished-at="2016-02-20T05:57:54Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Home\AppData\Local\Temp\testng-eclipse--1539901925\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Home\AppData\Local\Temp\testng-eclipse--1539901925\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:159)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:372)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:90)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:645)
-	at org.testng.TestRunner.run(TestRunner.java:613)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:347)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@59fa1d9b]" name="beforeTest" is-config="true" duration-ms="13544" started-at="2017-03-26T19:09:56Z" finished-at="2017-03-26T19:10:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="loginTest" duration-ms="5" started-at="2016-02-20T05:57:54Z" data-provider="Authentication" finished-at="2016-02-20T05:57:54Z">
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@59fa1d9b]" name="loginTest" duration-ms="6568" started-at="2017-03-26T19:10:10Z" data-provider="Authentication" finished-at="2017-03-26T19:10:17Z">
           <params>
             <param index="0">
               <value>
@@ -56,14 +31,79 @@ in C:\Users\Home\AppData\Local\Temp\testng-eclipse--1539901925\testng-customsuit
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='lgnFrm']/div[7]/button"}
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
+System info: host: 'Home-PC', ip: '192.168.0.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b753868a-8db6-449d-997b-c880853cab62
+*** Element info: {Using=xpath, value=.//*[@id='lgnFrm']/div[7]/button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='lgnFrm']/div[7]/button"}
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
+System info: host: 'Home-PC', ip: '192.168.0.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b753868a-8db6-449d-997b-c880853cab62
+*** Element info: {Using=xpath, value=.//*[@id='lgnFrm']/div[7]/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.naukri.LoginPage.signin(LoginPage.java:25)
+	at com.naukri.test.NaukriExecutionSuite.loginTest(NaukriExecutionSuite.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='lgnFrm']/div[7]/button"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.50.1', revision: 'd7fc91b29de65b790abb01f3ac5f7ea2191c88a7', time: '2016-01-29 11:11:26'
+System info: host: 'Home-PC', ip: '192.168.0.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Home/AppData/Local/Temp/anonymous6107230728960161598webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10719)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Home/AppData/Local/Temp/anonymous6107230728960161598webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2016-02-20T05:57:54Z" finished-at="2016-02-20T05:57:54Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.naukri.test.NaukriExecutionSuite@59fa1d9b]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-03-26T19:10:17Z" finished-at="2017-03-26T19:10:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.naukri.test.NaukriExecutionSuite -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Naukri Jo Portal Test_firefox -->
+  </suite> <!-- Naukri Job Portal Suite -->
 </testng-results>
