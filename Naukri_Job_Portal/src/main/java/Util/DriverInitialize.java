@@ -15,6 +15,7 @@ public class DriverInitialize {
 			
 			if(browserName.equalsIgnoreCase("firefox")){
 				driver = new FirefoxDriver();
+				System.out.println("jhg");
 			} else if(browserName.equalsIgnoreCase("ie")){
 				System.setProperty("webdriver.ie.driver", "D:/Automation/Workspace/Library/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
