@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Naukri Job Portal Suite]">
+  <test name="Naukri Jo Portal Test_chrome(failed)">
+    <classes>
+      <class name="com.naukri.test.NaukriExecutionSuite">
+        <methods>
+          <include name="loginTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.naukri.test.NaukriExecutionSuite -->
+    </classes>
+  </test> <!-- Naukri Jo Portal Test_chrome(failed) -->
+</suite> <!-- Failed suite [Naukri Job Portal Suite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Naukri Job Portal Suite" parallel='tests'>
+	<test name="Naukri Jo Portal Test_firefox">
+		<classes>
+		<parameter name='browser' value='firefox'/>
+			<class name = "com.naukri.test.NaukriExecutionSuite">
+				<methods>
+					<include name="loginTest"/>
+					<exclude name="multiWindowsTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<!--<test name="Naukri Jo Portal Test_chrome">
+		<classes>
+		<parameter name='browser' value='chrome'/>
+			<class name = "com.naukri.test.NaukriExecutionSuite">
+				<methods>
+					<include name="loginTest"/>
+					<exclude name="multiWindowsTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+</suite>

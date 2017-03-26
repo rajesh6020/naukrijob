@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="430" started-at="2016-02-20T00:27:54Z" finished-at="2016-02-20T00:27:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="430" started-at="2016-02-20T00:27:54Z" finished-at="2016-02-20T00:27:54Z">
+      <class name="com.naukri.test.NaukriExecutionSuite">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-02-20T05:57:54Z" finished-at="2016-02-20T05:57:54Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Home\AppData\Local\Temp\testng-eclipse--1539901925\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Home\AppData\Local\Temp\testng-eclipse--1539901925\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:159)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:372)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:90)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:645)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:347)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="loginTest" duration-ms="5" started-at="2016-02-20T05:57:54Z" data-provider="Authentication" finished-at="2016-02-20T05:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[basanticolony]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[guna4uguna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.naukri.test.NaukriExecutionSuite@2752f6e2]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2016-02-20T05:57:54Z" finished-at="2016-02-20T05:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.naukri.test.NaukriExecutionSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
